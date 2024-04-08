@@ -4,7 +4,7 @@
  * @returns {Array} An array containing the values of task and task2.
  */
 
-export default function taskBlock(trueOrFalse) {
+export default function taskBlock (trueOrFalse) {
   let task = false;
   let task2 = true;
 
