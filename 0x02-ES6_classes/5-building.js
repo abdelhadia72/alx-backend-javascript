@@ -9,9 +9,10 @@ export default class Building {
   }
 
   evacuationWarningMessage() {
-    if (!(this === Building))
+    if (!(this === Building)) {
       throw new Error(
-        "Class extending Building must override evacuationWarningMessage"
+        'Class extending Building must override evacuationWarningMessage',
       );
+    }
   }
 }
