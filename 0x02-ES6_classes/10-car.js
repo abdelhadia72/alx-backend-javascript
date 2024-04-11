@@ -1,4 +1,4 @@
-const cloneCarSymbol = Symbol('cloneCar');
+const cloneCarSymbol = Symbol("cloneCar");
 
 class Car {
   constructor(brand, motor, color) {
