@@ -1,9 +1,9 @@
 export default class Currency {
   constructor(code, name) {
-    if (typeof code === 'string' && typeof name === 'string') {
-      (this.code = code)((this.name = name));
+    if (typeof code === "string" && typeof name === "string") {
+      (this.code = code), (this.name = name);
     } else {
-      throw new Error('invalid data');
+      throw new Error("invalid data");
     }
   }
 
@@ -12,7 +12,7 @@ export default class Currency {
   }
 
   set name(value) {
-    if (typeof value === 'string') {
+    if (typeof value === "string") {
       this._name = value;
     }
   }
@@ -22,7 +22,7 @@ export default class Currency {
   }
 
   set code(value) {
-    if (typeof value === 'string') {
+    if (typeof value === "string") {
       this._code = value;
     }
   }
