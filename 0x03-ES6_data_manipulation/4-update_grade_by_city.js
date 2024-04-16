@@ -7,7 +7,7 @@ function updateStudentGradeByCity(students, city, newGrades) {
           return newGrade.grade;
         }
         return grade;
-      }, "N/A");
+      }, 'N/A');
       return {
         ...student,
         grade: newGrade,
