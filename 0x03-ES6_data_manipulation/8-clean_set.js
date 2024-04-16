@@ -1,7 +1,7 @@
 export default function cleanSet(set, startString) {
   const result = [];
-  if (!startString || typeof startString !== "string") {
-    return "";
+  if (!startString || typeof startString !== 'string') {
+    return '';
   }
 
   for (const value of set) {
@@ -10,5 +10,5 @@ export default function cleanSet(set, startString) {
     }
   }
 
-  return result.join("-");
+  return result.join('-');
 }
