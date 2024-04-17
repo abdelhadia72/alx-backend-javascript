@@ -13,3 +13,4 @@ function queryAPI(endpoint) {
 }
 
 export { queryAPI, weakMap };
+ 
