@@ -14,6 +14,7 @@ const teacher3: Teacher = {
     location: 'London',
     contract: false,
 };
+
 interface printTeacherFunction {
     (firstName: string, lastName: string): string;
 }
@@ -36,3 +37,30 @@ const director1: Directors = {
 };
 console.log(director1);
 console.log(teacher3);
+
+interface Student {
+    firstName: string;
+    lastName: string;
+}
+
+class StudentClass implements Student {
+    firstName: string;
+    lastName: string;
+
+    constructor(firstName: string, lastName: string) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    workOnHomework(): string {
+        return 'Currently working';
+    }
+
+    displayName(): string {
+        return this.firstName;
+    }
+}
+
+const student1 = new StudentClass('Alice', 'Smith');
+console.log(student1.workOnHomework());
+console.log(student1.displayName());
