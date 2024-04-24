@@ -37,5 +37,4 @@ studentsList.forEach((element)=>{
 
 document.body.appendChild(table);
 
-
 console.log("here")
